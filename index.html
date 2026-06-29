@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Hero</title>
+    <!-- Header Scripts -->
+    <script type="module">
+        import 'https://esm.sh/@material/web/divider/divider.js';
+        import 'https://esm.sh/@material/web/list/list.js';
+        import 'https://esm.sh/@material/web/list/list-item.js';
+        import 'https://esm.sh/@material/web/ripple/ripple.js';
+    </script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css">
 
@@ -11,53 +19,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&family=Tilt+Warp&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <h1>Sports Hero</h1>
 
-    <header>
-        <!-- LG -->
-    </header>
-
+    <top-app-bar title="Sports-Hero" title-nav="Navegação">
+        <span slot="trigger" class="material-symbols-outlined">menu</span>
+        <span slot="item">Home</span>
+        <span slot="item">Contato</span>
+    </top-app-bar>
+    
     <main>
+        <section class="banner">
+            <img src="assets/banner.png" alt="Banner Sports Hero">
+        </section>
+
         <section class="about">
-            <!-- Sobre o projeto -->
             <h2>Sobre</h2>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, esse numquam assumenda deserunt aspernatur culpa exercitationem quasi itaque ipsa sint nobis similique. Perferendis omnis rerum cupiditate nobis? Veritatis, ipsum provident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quo vero ea amet eveniet eius labore voluptate exercitationem officiis sunt excepturi odit natus reiciendis aspernatur nulla, rem quis aut explicabo.</p>
         </section>
 
         <section class="sports">
-            <!-- Esportes disponíveis -->
             <h2>Esportes Disponíveis</h2>
+
+            <ol>
+                <li>
+                    <h3>Esporte 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, molestias odit autem dolorem dolorum at, molestiae dignissimos possimus, qui sed vero temporibus. Aspernatur porro iste quia! A veritatis dolor ea?</p>
+                </li>
+                <li>
+                    <h3>Esporte 2</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur perferendis cumque iusto repellat? Facere odit eveniet corrupti optio vero ratione iure atque amet, fugiat, sit ab maxime nemo nulla.</p>
+                </li>
+                <li>
+                    <h3>Esporte 3</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur perferendis cumque iusto repellat? Facere odit eveniet corrupti optio vero ratione iure atque amet, fugiat, sit ab maxime nemo nulla.</p>
+                </li>
+            </ol>
         </section>
 
         <section class="athlete">
-            <!-- Como ser um atleta -->
             <h2>Como ser um atleta</h2>
 
-            <!-- Lista -->
             <ul>
-                <li>teste 1</li>
-                <li>teste 2</li>
-                <li>teste 3</li>
+                <li>
+                    <h3>Passo 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore quibusdam placeat eligendi. Tempore numquam repellat placeat obcaecati, aliquid odit porro non nesciunt alias voluptas amet doloremque, optio voluptate incidunt?</p>
+                </li>
+                <li>
+                    <h3>Passo 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore quibusdam placeat eligendi. Tempore numquam repellat placeat obcaecati, aliquid odit porro non nesciunt alias voluptas amet doloremque, optio voluptate incidunt?</p>
+                </li>
+                <li>
+                    <h3>Passo 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore quibusdam placeat eligendi. Tempore numquam repellat placeat obcaecati, aliquid odit porro non nesciunt alias voluptas amet doloremque, optio voluptate incidunt?</p>
+                </li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span class="date"></span> Sports Hero</p>
-        <p>
+        <div>
+            <p>&copy; <span class="date"></span> Sports Hero</p>
+        </div>
+
+        <div class="links">
             <div>
                 <a href="https://github.com/flameastro/sports-hero">Repositório</a>
                 <a href="mailto:flame77ofc@gmail.com">Contato</a>
             </div>
-
             <div>
                 <a href="https://github.com/flameastro/">flameastro</a>
                 <a href="https://github.com/luan-gb/">lg</a>
             </div>
-        </p>
+        </div>
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script type="module" src="scripts/header.js"></script>
 </body>
 </html>
