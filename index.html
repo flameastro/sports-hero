@@ -10,6 +10,9 @@
         import 'https://esm.sh/@material/web/list/list.js';
         import 'https://esm.sh/@material/web/list/list-item.js';
         import 'https://esm.sh/@material/web/ripple/ripple.js';
+
+        import 'https://esm.sh/@material/web/icon/icon.js';
+        import 'https://esm.sh/@material/web/iconbutton/icon-button.js';
     </script>
 
     <!-- Styles -->
@@ -24,14 +27,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
-    <h1>Sports Hero</h1>
+    <h1>⚽ Sports Hero</h1>
 
-    <top-app-bar title="Sports-Hero" title-nav="Navegação">
-        <span slot="trigger" class="material-symbols-outlined">menu</span>
-        <span slot="item">Home</span>
-        <span slot="item">Contato</span>
+    <top-app-bar title="Esportes" title-nav="Navegação">
+        <md-icon-button slot="trigger">
+            <span class="material-symbols-outlined">menu</span>
+        </md-icon-button>
+
+        <a slot="item" href="/index.html">Início</a>
+        <a slot="item" href="/pages/basquete.html">Basquete</a>
+        <a slot="item" href="/pages/futebol.html">Futebol</a>
+        <a slot="item" href="/pages/volei.html">Vôlei</a>
     </top-app-bar>
-    
+
     <main>
         <section class="banner">
             <img src="assets/banner.png" alt="Banner Sports Hero">
@@ -40,8 +48,7 @@
         <section class="about">
             <h2>Sobre</h2>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, esse numquam assumenda deserunt aspernatur culpa exercitationem quasi itaque ipsa sint nobis similique. Perferendis omnis rerum cupiditate nobis? Veritatis, ipsum provident.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quo vero ea amet eveniet eius labore voluptate exercitationem officiis sunt excepturi odit natus reiciendis aspernatur nulla, rem quis aut explicabo.</p>
+            <p>O Sports Hero é um site informacional que diz a respeito sobre os esportes em geral. É um ótimo site para aqueles que são curiosos que gostam de aprender cada dia mais.</p>
         </section>
 
         <section class="sports">
@@ -49,16 +56,16 @@
 
             <ol>
                 <li>
-                    <h3>Esporte 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, molestias odit autem dolorem dolorum at, molestiae dignissimos possimus, qui sed vero temporibus. Aspernatur porro iste quia! A veritatis dolor ea?</p>
+                    <h3><a href="pages/futebol.html">⚽ Futebol</a></h3>
+                    <p>O futebol é o esporte mais conhecido mundialmente. Saiba mais</p>
                 </li>
                 <li>
-                    <h3>Esporte 2</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur perferendis cumque iusto repellat? Facere odit eveniet corrupti optio vero ratione iure atque amet, fugiat, sit ab maxime nemo nulla.</p>
+                    <h3><a href="pages/volei.html">🏐 Vôlei</a></h3>
+                    <p>O Vôlei é um jogo bastante competitivo e divertido. Saiba mais</p>
                 </li>
                 <li>
-                    <h3>Esporte 3</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur perferendis cumque iusto repellat? Facere odit eveniet corrupti optio vero ratione iure atque amet, fugiat, sit ab maxime nemo nulla.</p>
+                    <h3><a href="pages/basquete.html">🏀 Basquete</a></h3>
+                    <p>Famoso nos Estados Unidos, o Basquete é tradicionalmente jogado. Saiba mais</p>
                 </li>
             </ol>
         </section>
@@ -68,16 +75,20 @@
 
             <ul>
                 <li>
-                    <h3>Passo 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore quibusdam placeat eligendi. Tempore numquam repellat placeat obcaecati, aliquid odit porro non nesciunt alias voluptas amet doloremque, optio voluptate incidunt?</p>
+                    <h3>Escolha a sua modalidade</h3>
+                    <p>O primeiro passo é encontrar um esporte que você realmente goste. Pode ser corrida, futebol, natação, musculação, artes marciais ou basquete. Sentir prazer no treino é o que vai te manter motivado a longo prazo.</p>
                 </li>
                 <li>
-                    <h3>Passo 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore quibusdam placeat eligendi. Tempore numquam repellat placeat obcaecati, aliquid odit porro non nesciunt alias voluptas amet doloremque, optio voluptate incidunt?</p>
+                    <h3>Tenha constância nos treinos</h3>
+                    <p>A diferença entre um praticante casual e um atleta é o compromisso. Crie uma planilha ou um cronograma semanal de treinos. Comece com metas realistas (ex: treinar 3 a 4 vezes por semana) e aumente a intensidade gradualmente. Foque em aprender a técnica correta de cada movimento para evitar lesões.</p>
                 </li>
                 <li>
-                    <h3>Passo 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore quibusdam placeat eligendi. Tempore numquam repellat placeat obcaecati, aliquid odit porro non nesciunt alias voluptas amet doloremque, optio voluptate incidunt?</p>
+                    <h3>Cuide da alimentação e hidratação</h3>
+                    <p>O seu corpo é a sua máquina, e a comida é o combustível. Consuma proteínas (frango, ovos, peixes, leguminosas) para a recuperação dos músculos. Não corte os carboidratos (arroz, batata, aveia), pois eles dão a energia necessária para o treino. Beba muita água antes, durante e depois das atividades.</p>
+                </li>
+                <li>
+                    <h3>Priorize o descanso e o sono</h3>
+                    <p>É durante o sono que o corpo se reconstrói e fica mais forte. Tente dormir entre 7 e 9 horas por noite.Tenha pelo menos um ou dois dias de descanso total na semana (os chamados dias de rest day) para evitar o overtraining.</p>
                 </li>
             </ul>
         </section>
