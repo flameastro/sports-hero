@@ -1,0 +1,23 @@
+:root {
+    --font-archivo: "Archivo", sans-serif;
+    --font-bricolage: "Bricolage Grotesque", sans-serif;
+    --font-dm-sans: "DM Sans", sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+    --font-lexend: "Lexend", sans-serif;
+    --font-manrope: "Manrope", sans-serif;
+    --font-outfit: "Outfit", sans-serif;
+    --font-space: "Space Grotesk", sans-serif;
+    --font-tilt: "Tilt Warp", sans-serif;
+}
+
+* {
+    font-family: var(--font-space);
+}
+
+h1 {
+    font-family: var(--font-bricolage);
+}
+
+ul {
+    font-family: var(--font-manrope);
+}
