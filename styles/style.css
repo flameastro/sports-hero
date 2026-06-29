@@ -114,15 +114,19 @@ ol,
 ul {
     margin: 5px 10px 5px 30px;
     font-family: var(--font-manrope);
-
 }
 
 a {
     color: var(--color-amber-600);
+    transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+    color: var(--color-amber-700);
 }
 
 main {
-    margin: 30px 10px;
+    margin: 75px 10px;
 }
 
 .banner img {
@@ -153,4 +157,27 @@ footer .links {
 .links>div {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+    main {
+        margin: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin: 75px auto;
+        width: 750px;
+    }
+
+    p, ul {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        width: 890px;
+    }
 }
